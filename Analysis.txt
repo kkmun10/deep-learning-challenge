@@ -1,0 +1,37 @@
+Overview
+	The nonprofit foundation Alphabet Soup wants a tool that can help it select the applicants for funding with the best chance of success in their ventures. With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup.
+
+Data Processing:
+The target variable, denoted by the column "IS_SUCCESSFUL," represents whether the funding was used effectively. The feature include application types, which were categorized by grouping application types with less than 500 occurrences into an "other" category. Similarly, for the classification category, creating an "other" type for categories with less than 200 occurrences.
+
+Compiling, Training, and Evaluating the Model:
+Three models were evaluated:
+
+Model 1:
+
+Layer 1: 80 units with 3680 parameters using the relu activation function.
+Layer 2: 30 units with 2430 parameters using relu.
+Output layer: 1 unit with 31 parameters using sigmoid.
+Total trainable parameters: 6,141.
+Trained for 100 epochs, achieving a loss of 0.562 and an accuracy of 0.725.
+Model 2:
+
+Layer 1: 100 units with 4600 parameters using relu.
+Layer 2: 50 units with 5050 parameters using relu.
+Layer 3: 30 units with 1530 parameters using relu.
+Output layer: 1 unit with 31 parameters using sigmoid.
+Total trainable parameters: 11,211.
+Trained for 100 epochs, resulting in a loss of 0.575 and an accuracy of 0.724.
+Model 3:
+
+Layer 1: 10 units with 460 parameters using relu.
+Layer 2: 8 units with 88 parameters using sigmoid.
+Layer 3: 6 units with 54 parameters using sigmoid.
+Output layer: 1 unit with 7 parameters using sigmoid.
+Total trainable parameters: 609.
+Trained for 100 epochs, achieving a loss of 0.549 and an accuracy of 0.731.
+
+Summary:
+Model 3 achieved the highest accuracy at 73%. The models were adjusted by  number of units in the layers, exploring both increasing and decreasing unit sizes. Additionally, changes were made to the activation functions in layers 2 and 3 of Model 3. Further evaluation could involve modifying the classification binning by considering a threshold of anything under 1000 occurrences to identify any remaining outliers.
+
+In conclusion, the analysis has made progress in developing a binary classifier to predict the success of funding applicants for Alphabet Soup. Continuing to refine the model and exploring additional feature engineering techniques may lead to improved accuracy and better predictions for funding success.
